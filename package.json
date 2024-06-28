@@ -1,0 +1,32 @@
+{
+	"name": "hl2b",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"dev": "tsx  watch src/index.ts",
+		"lint": " npx @biomejs/biome check --write .",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/NatanBack77/HL2B.git"
+	},
+	"author": "Natabael",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/NatanBack77/HL2B/issues"
+	},
+	"homepage": "https://github.com/NatanBack77/HL2B#readme",
+	"description": "",
+	"dependencies": {
+		"axios": "^1.7.2",
+		"fs": "^0.0.1-security"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.3",
+		"@types/express": "^4.17.21",
+		"@types/node": "^20.14.9",
+		"tsx": "^4.15.8",
+		"typescript": "^5.5.2"
+	}
+}
