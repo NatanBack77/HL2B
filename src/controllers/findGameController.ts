@@ -1,14 +1,13 @@
+import { getAllGamesController } from "./getAllGameController";
 
-export async function findGamescontroller(response:any) {
+export async function findGamescontroller(game:string) {
 	const inicio = performance.now();
-	
-	const gameData = await JSON.stringify(response);
-	console.log(gameData);
 
+	const gameData = await JSON.stringify(getAllGamesController());
+    
 	const games = Array.from(gameData);
-
-	// const gameFound = games.find((item: any) => item.name === game);
-	// console.log(gameFound)
+console.log(games)
+	const gameFound = games.find((item: any) => item.name === game)
 
 	const fim = performance.now();
 	console.log(`A operação levou ${fim - inicio} milissegundos`);
