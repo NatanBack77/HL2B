@@ -1,6 +1,4 @@
-import { findGamescontroller } from "./findGameController";
-
-const axios = require("axios");
+import axios from "axios";
 
 export async function getAllGamesController() {
 	return await axios.get(

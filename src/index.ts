@@ -1,3 +1,9 @@
 import { findGamescontroller } from "./controllers/findGameController";
 
-findGamescontroller("The Apple");
+export async function get(game: string) {
+	try {
+		return await findGamescontroller(game);
+	} catch (error) {
+		return error;
+	}
+}
