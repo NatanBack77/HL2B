@@ -1,9 +1,20 @@
 import { findGamescontroller } from "./controllers/findGameController";
+import { getAllGameController } from "./controllers/getAllGamesController";
 
-export async function get(game: string) {
-	try {
-		return await findGamescontroller(game);
-	} catch (error) {
-		return error;
+interface get_Config {
+	url: string;
+	limit?: number;
+}
+export class hl2b {
+	constructor({ url }: get_Config) {
+		url;
+	}
+
+	static async get({ url, limit }: get_Config) {
+		return await getAllGameController(url, limit);
+	}
+
+	static async find(game: string, url: string) {
+		return await findGamescontroller(game, url);
 	}
 }
