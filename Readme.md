@@ -1,8 +1,7 @@
 # HOW TO USE?
  
 ```typescript
-
-import { hl2b } from "../src";
+import { hl2b } from "hl2b";
 
 /**
  * Essas funções do hl2b são promises, pode ser usadas dentro de uma função assícrona, ou usar o thenCatch pra capturar o response
@@ -29,6 +28,7 @@ async function find(game: string, url: string) {
 // Exemplo de uso:
 get(url);
 find("nameOfTheGame", url);
+
 
 
 
