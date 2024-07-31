@@ -23,5 +23,5 @@ async function find(game: string, url: string) {
 }
 
 // Exemplo de uso:
-get(url);
+console.log(get(url));
 find("nameOfTheGame", url);
