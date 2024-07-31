@@ -1,5 +1,5 @@
 import { hl2b } from "..";
-import { Message } from "../helpers/Erro";
+import { Message } from "../helpers/Error";
 
 export async function findGamescontroller(game: string, url: string) {
 	const response = await hl2b.get({ url });
