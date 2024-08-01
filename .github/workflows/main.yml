@@ -6,6 +6,11 @@ on:
    branches:
     - main
 
+permissions:
+   contents: write
+   issues: write
+   pull-requests: write
+
 jobs:
   build:
 
@@ -22,13 +27,9 @@ jobs:
       with:
        node-version: ${{ matrix.node-version }}
        
-    - name: Install dependencies
-      run: npm i
-      
-    - name: Building of the package
-      run: npm run build
-      
-    - name: Publish to npm
+    - run: npm ci
+    - run: npm run build
+    - run : npm audit signatures
       env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      run: npm publish
+    - run: npm run semantic-release

@@ -7,6 +7,7 @@
 		"test": "vitest",
 		"run": "tsx watch test/game.ts",
 		"dev": "tsx  watch src/index.ts",
+		"semantic-release":"semantic-release",
 		"lint": " npx @biomejs/biome check --write .",
 		"build": "tsc --declaration"
 	},
@@ -27,9 +28,14 @@
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.3",
 		"@types/node": "^20.14.9",
+		"semantic-release": "^24.0.0",
 		"tsup": "^8.1.0",
 		"tsx": "^4.15.8",
 		"typescript": "^5.5.3"
+	},
+	"files": ["dist","Readme.md"],
+	"publishConfig": {
+		"access": "public"
 	},
 	"directories": {
 		"test": "test"
