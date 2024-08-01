@@ -25,7 +25,7 @@ async function find(game: string, url: string) {
 	return await hl2b.find(game, url);
 }
 
-// Exemplo de uso:
+// Exemplo de usos:
 get(url);
 find("nameOfTheGame", url);
 
