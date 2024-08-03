@@ -43,17 +43,10 @@
 			"@semantic-release/release-notes-generator",
 			"@semantic-release/npm",
 			"@semantic-release/git",
-			[
-				"@semantic-release/git"
-			]
-	
+			["@semantic-release/git"]
 		]
-		
 	},
-	"files": [
-		"dist",
-		"Readme.md"
-	],
+	"files": ["dist", "Readme.md"],
 	"publishConfig": {
 		"access": "public"
 	},
