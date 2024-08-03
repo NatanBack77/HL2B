@@ -46,7 +46,9 @@
 			[
 				"@semantic-release/git"
 			]
-		]
+	
+		],
+		"NPM_TOKEN":"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"
 	},
 	"files": [
 		"dist",
