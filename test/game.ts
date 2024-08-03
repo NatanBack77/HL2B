@@ -1,4 +1,4 @@
-import { hl2b } from "../src"; //Import
+import { hl2b } from "../src"; //Import1
 
 /**
  * Essas funções do hl2b são promises, pode ser usadas dentro de uma função assícrona, ou usar o thenCatch pra capturar o response
